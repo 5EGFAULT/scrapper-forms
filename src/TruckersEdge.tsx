@@ -160,11 +160,11 @@ export default function TruckersEdge() {
   };
 
   return (
-    <form className="w-full	 bg-white  rounded-lg" ref={formref}>
-      <h2 className="text-center text-2xl">Truckers Edge </h2>
+    <form className="w-full	  rounded-lg" ref={formref}>
+      <h2 className=" dark:text-white text-center text-2xl">Truckers Edge </h2>
       <div className="flex w-full justify-between gap-3 flex-wrap">
         <label className="flex flex-col my-2 flex-grow">
-          <span className="text-black mb-2 text-base capitalize">Origin:</span>
+          <span className="dark:text-white text-black mb-2 text-base capitalize">Origin:</span>
           <input
             onChange={(e) => {
               setFormData({ ...formData, origin: e.target.value });
@@ -175,7 +175,7 @@ export default function TruckersEdge() {
           />
         </label>
         <label className="flex flex-col my-2 w-full sm:max-w-[150px]">
-          <span className="text-black mb-2 text-base capitalize">Dh-O:</span>
+          <span className="dark:text-white text-black mb-2 text-base capitalize">Dh-O:</span>
           <input
             onChange={(e) => {
               setFormData({ ...formData, origin_dh: e.target.value });
@@ -188,7 +188,7 @@ export default function TruckersEdge() {
       </div>
       <div className="flex w-full justify-between gap-3 flex-wrap">
         <label className="flex flex-col my-2 flex-grow">
-          <span className="text-black mb-2 text-base capitalize">
+          <span className="dark:text-white text-black mb-2 text-base capitalize">
             Destination:
           </span>
           <input
@@ -201,7 +201,7 @@ export default function TruckersEdge() {
           />
         </label>
         <label className="flex flex-col my-2 w-full sm:max-w-[150px]">
-          <span className="text-black mb-2 text-base capitalize">Dh-D:</span>
+          <span className="dark:text-white text-black mb-2 text-base capitalize">Dh-D:</span>
           <input
             onChange={(e) => {
               setFormData({ ...formData, destination_dh: e.target.value });
@@ -223,7 +223,7 @@ export default function TruckersEdge() {
             }}
             onClick={() => setshowSpec(false)}
           />
-          <span className="ml-2">General</span>
+          <span className="dark:text-white ml-2">General</span>
         </label>
         <label className="flex h-7 items-center">
           <input
@@ -235,11 +235,11 @@ export default function TruckersEdge() {
             value="Specific"
             onClick={() => setshowSpec(true)}
           />
-          <span className="ml-2">Specific</span>
+          <span className="dark:text-white ml-2">Specific</span>
         </label>
       </div>
       <label className="flex my-2  flex-col flex-wrap justify-evenly">
-        <span className="mb-2">Truck type</span>
+        <span className="dark:text-white mb-2">Truck type</span>
         {showSpec && (
           <MultiSelect
             className="max-w-full"
@@ -272,7 +272,7 @@ export default function TruckersEdge() {
       </label>
       <div className="flex w-full justify-between gap-3 flex-wrap">
         <label className="flex flex-col my-2 flex-grow">
-          <span className="text-black mb-2 text-base capitalize">Length:</span>
+          <span className=" dark:text-white text-black mb-2 text-base capitalize">Length:</span>
           <input
             onChange={(e) => {
               setFormData({ ...formData, length: e.target.value });
@@ -295,7 +295,7 @@ export default function TruckersEdge() {
         </label>
       </div>
       <label className="flex my-2  flex-col flex-wrap justify-evenly">
-        <span className="mb-2">Full/partial</span>
+        <span className="dark:text-white mb-2">Full/partial</span>
         <select
           className="rounded-md text-base"
           onChange={(e) => {
@@ -309,7 +309,7 @@ export default function TruckersEdge() {
       </label>
       <div className="flex w-full justify-between gap-3 flex-wrap">
         <label className="flex flex-col my-2 flex-grow">
-          <span className="text-black mb-2 text-base capitalize">
+          <span className="dark:text-white text-black mb-2 text-base capitalize">
             Start date:
           </span>
           <input
@@ -322,7 +322,7 @@ export default function TruckersEdge() {
           />
         </label>
         <label className="flex flex-col my-2 flex-grow">
-          <span className="text-black mb-2 text-base capitalize">
+          <span className=" dark:text-whitetext-black mb-2 text-base capitalize">
             End date:
           </span>
           <input
