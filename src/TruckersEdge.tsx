@@ -9,7 +9,6 @@ const options = [
   { value: "CI", label: "Container Insulated" },
   { value: "CR", label: "Container Refrigerated" },
   { value: "CV", label: "Conveyor" },
-  { value: "DD", label: "Double Drop" },
   { value: "LA", label: "Drop Deck Landoll" },
   { value: "DT", label: "Dump Trailer" },
   { value: "F", label: "Flatbed" },
@@ -76,17 +75,33 @@ const options = [
   { value: "VP", label: "Van w/Pallet Exchange" },
 ];
 
+const options_general = [
+  { value: "Vans,Standard", label: "Vans,Standard" },
+  { value: "Flatbeds", label: "Flatbeds" },
+  { value: "Reefers", label: "Reefers" },
+  { value: "Conestoga", label: "Conestoga" },
+  { value: "Containers", label: "Containers" },
+  { value: "Decks, Specialized", label: "Decks, Specialized" },
+  { value: "Decks, Standard", label: "Decks, Standard" },
+  { value: "Dry Bulk", label: "Dry Bulk" },
+  { value: "Hazardous Materials", label: "Hazardous Materials" },
+  { value: "Other Equipment", label: "Other Equipment" },
+  { value: "Tankers", label: "Tankers" },
+  { value: "Vans, Specialized", label: "Vans, Specialized" },
+
+];
+
 type formdata = {
   origin: null | string;
   origin_dh: null | string;
   destination: null | string;
   destination_dh: null | string;
   general_specifc: null | string;
-  truck_type_general: null | string;
-  truck_type_specific: string[];
+  truck_type_general: string [];
+  truck_type_specific: string [];
   length: null | string;
   weight: null | string;
-  full_partial: null | string;
+  full_partial: "Both" | string;
   startDate: null | string;
   endDate: null | string;
 };
@@ -96,17 +111,20 @@ export default function TruckersEdge() {
   const [selected, setSelected] = useState<{ value: string; label: string }[]>(
     []
   );
+  const [selected_general, setSelected_general] = useState<{ value: string; label: string }[]>(
+    []
+  );
   const [formData, setFormData] = useState<formdata>({
     origin: null,
     origin_dh: null,
     destination: null,
     destination_dh: null,
     general_specifc: null,
-    truck_type_general: null,
+    truck_type_general: [],
     truck_type_specific: [],
     length: null,
     weight: null,
-    full_partial: null,
+    full_partial: "Both",
     startDate: null,
     endDate: null,
   });
@@ -121,11 +139,11 @@ export default function TruckersEdge() {
         destination: null,
         destination_dh: null,
         general_specifc: null,
-        truck_type_general: null,
+        truck_type_general: [],
         truck_type_specific: [],
         length: null,
         weight: null,
-        full_partial: null,
+        full_partial: "Both",
         startDate: null,
         endDate: null,
       });
@@ -138,9 +156,28 @@ export default function TruckersEdge() {
     });
   }, [selected]);
 
-  const submitform = () => {
-    console.log(formData);
-    //if (formref.current) {
+  useEffect(() => {
+    setFormData({
+      ...formData,
+      truck_type_general: selected_general.map((v) => v.value),
+    });
+  }, [selected_general]);
+
+  const submitform = async () => {
+    let res = fetch(
+      "http://localhost:3333/truckersedge",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    ).then((res) => {
+      
+      console.log(formData, res);
+    });
+    // if (formref.current) {
     //  formref.current.reset();
     //  setFormData({
     //    origin: null,
@@ -156,7 +193,7 @@ export default function TruckersEdge() {
     //    startDate: null,
     //    endDate: null,
     //  });
-    //}
+    // }
   };
 
   return (
@@ -165,7 +202,7 @@ export default function TruckersEdge() {
       <div className="flex w-full justify-between gap-3 flex-wrap">
         <label className="flex flex-col my-2 flex-grow">
           <span className="dark:text-white text-black mb-2 text-base capitalize">Origin:</span>
-          <input
+          <input required
             onChange={(e) => {
               setFormData({ ...formData, origin: e.target.value });
             }}
@@ -176,7 +213,7 @@ export default function TruckersEdge() {
         </label>
         <label className="flex flex-col my-2 w-full sm:max-w-[150px]">
           <span className="dark:text-white text-black mb-2 text-base capitalize">Dh-O:</span>
-          <input
+          <input required
             onChange={(e) => {
               setFormData({ ...formData, origin_dh: e.target.value });
             }}
@@ -191,7 +228,7 @@ export default function TruckersEdge() {
           <span className="dark:text-white text-black mb-2 text-base capitalize">
             Destination:
           </span>
-          <input
+          <input required
             onChange={(e) => {
               setFormData({ ...formData, destination: e.target.value });
             }}
@@ -202,7 +239,7 @@ export default function TruckersEdge() {
         </label>
         <label className="flex flex-col my-2 w-full sm:max-w-[150px]">
           <span className="dark:text-white text-black mb-2 text-base capitalize">Dh-D:</span>
-          <input
+          <input required 
             onChange={(e) => {
               setFormData({ ...formData, destination_dh: e.target.value });
             }}
@@ -214,7 +251,7 @@ export default function TruckersEdge() {
       </div>
       <div className="flex flex-wrap justify-evenly">
         <label className="flex h-7 items-center">
-          <input
+          <input required
             type="radio"
             name="spec"
             value="General"
@@ -226,7 +263,7 @@ export default function TruckersEdge() {
           <span className="dark:text-white ml-2">General</span>
         </label>
         <label className="flex h-7 items-center">
-          <input
+          <input required
             type="radio"
             name="spec"
             onChange={(e) => {
@@ -250,6 +287,15 @@ export default function TruckersEdge() {
           />
         )}
         {!showSpec && (
+          <MultiSelect
+            className="max-w-full"
+            options={options_general}
+            value={selected_general}
+            onChange={setSelected_general}
+            labelledBy={"Truck type"}
+          />
+        )}
+        {/* {!showSpec && (
           <select
             className="rounded-md text-base"
             onChange={(e) => {
@@ -268,12 +314,12 @@ export default function TruckersEdge() {
             <option value="T">Tankers</option>
             <option value="S">Vans Specialized</option>
           </select>
-        )}
+        )} */}
       </label>
       <div className="flex w-full justify-between gap-3 flex-wrap">
         <label className="flex flex-col my-2 flex-grow">
           <span className=" dark:text-white text-black mb-2 text-base capitalize">Length:</span>
-          <input
+          <input required
             onChange={(e) => {
               setFormData({ ...formData, length: e.target.value });
             }}
@@ -284,7 +330,7 @@ export default function TruckersEdge() {
         </label>
         <label className="flex flex-col my-2 flex-grow">
           <span className="text-black mb-2 text-base capitalize">Weight:</span>
-          <input
+          <input required
             onChange={(e) => {
               setFormData({ ...formData, weight: e.target.value });
             }}
@@ -312,7 +358,7 @@ export default function TruckersEdge() {
           <span className="dark:text-white text-black mb-2 text-base capitalize">
             Start date:
           </span>
-          <input
+          <input required
             onChange={(e) => {
               setFormData({ ...formData, startDate: e.target.value });
             }}
@@ -325,7 +371,7 @@ export default function TruckersEdge() {
           <span className=" dark:text-whitetext-black mb-2 text-base capitalize">
             End date:
           </span>
-          <input
+          <input required
             onChange={(e) => {
               setFormData({ ...formData, endDate: e.target.value });
             }}

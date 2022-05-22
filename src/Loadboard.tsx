@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { MultiSelect } from "react-multi-select-component";
+// import express from "express";
 
+// const app = express();
 const options = [
   { value: "AL", label: "Alabama" },
   { value: "AK", label: "Alaska" },
@@ -69,11 +71,11 @@ type formdata = {
   destination: null | string;
   destination_dh: null | string;
   general_specifc: null | string;
-  truck_type_general: null | string;
+  truck_type_general: string[];
   truck_type_specific: string[];
   length: null | string;
   weight: null | string;
-  full_partial: null | string;
+  full_partial: "Both" | string;
   startDate: null | string;
   endDate: null | string;
 };
@@ -89,11 +91,11 @@ export default function TruckersEdge() {
     destination: null,
     destination_dh: null,
     general_specifc: null,
-    truck_type_general: null,
+    truck_type_general: [],
     truck_type_specific: [],
     length: null,
     weight: null,
-    full_partial: null,
+    full_partial: "Both",
     startDate: null,
     endDate: null,
   });
@@ -108,11 +110,11 @@ export default function TruckersEdge() {
         destination: null,
         destination_dh: null,
         general_specifc: null,
-        truck_type_general: null,
+        truck_type_general: [],
         truck_type_specific: [],
         length: null,
         weight: null,
-        full_partial: null,
+        full_partial: "Both",
         startDate: null,
         endDate: null,
       });
@@ -124,27 +126,13 @@ export default function TruckersEdge() {
       truck_type_specific: selected.map((v) => v.value),
     });
   }, [selected]);
+  useEffect(() => {
+    setFormData({
+      ...formData,
+      truck_type_general: selected.map((v) => v.value),
+    });
+  }, [selected]);
 
-  const submitform = () => {
-    console.log(formData);
-    //if (formref.current) {
-    //  formref.current.reset();
-    //  setFormData({
-    //    origin: null,
-    //    origin_dh: null,
-    //    destination: null,
-    //    destination_dh: null,
-    //    general_specifc: null,
-    //    truck_type_general: null,
-    //    truck_type_specific: [],
-    //    length: null,
-    //    weight: null,
-    //    full_partial: null,
-    //    startDate: null,
-    //    endDate: null,
-    //  });
-    //}
-  };
 
   return (
     <form className="w-full	 bg-white  rounded-lg" ref={formref}>
@@ -335,7 +323,7 @@ export default function TruckersEdge() {
           Reset
         </div>
         <div
-          onClick={submitform}
+          // onClick={submitform}
           className="  my-2 min-w-full sm:flex-grow sm:min-w-0 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  sm:w-auto px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Submit
