@@ -1,78 +1,80 @@
 import React, { useEffect, useRef, useState } from "react";
 import { MultiSelect } from "react-multi-select-component";
-
+import Loading from "./loading";
 const options = [
-  { value: "AC", label: "Auto Carrier" },
-  { value: "BT", label: "B-Train" },
-  { value: "CN", label: "Conestoga" },
-  { value: "C", label: "Container" },
-  { value: "CI", label: "Container Insulated" },
-  { value: "CR", label: "Container Refrigerated" },
-  { value: "CV", label: "Conveyor" },
-  { value: "LA", label: "Drop Deck Landoll" },
-  { value: "DT", label: "Dump Trailer" },
-  { value: "F", label: "Flatbed" },
-  { value: "FA", label: "Flatbed Air-Ride" },
-  { value: "FN", label: "Flatbed Conestoga" },
-  { value: "F2", label: "Flatbed Double" },
-  { value: "FZ", label: "Flatbed HazMat" },
-  { value: "FH", label: "Flatbed Hotshot" },
-  { value: "MX", label: "Flatbed Maxi" },
-  { value: "FD", label: "Flatbed or Step Deck" },
-  { value: "FS", label: "Flatbed w/Sides" },
-  { value: "FT", label: "Flatbed w/Tarps" },
-  { value: "FM", label: "Flatbed w/Team" },
-  { value: "FO", label: "Flatbed, Over Dimension" },
-  { value: "FC", label: "Flatbed w/Chains" },
-  { value: "FR", label: "Flatbed/Van/Reefer" },
-  { value: "HB", label: "Hopper Bottom" },
-  { value: "IR", label: "Insulated Van or Reefer" },
-  { value: "LB", label: "Lowbey" },
-  { value: "LR", label: "Lowbey or RGN" },
-  { value: "LO", label: "Lowbey, over Dimension" },
-  { value: "MV", label: "Moving Van" },
-  { value: "NU", label: "Pneumatic" },
-  { value: "PO", label: "Power only" },
-  { value: "R", label: "Reefer" },
-  { value: "RA", label: "Reefer Air-Ride" },
-  { value: "R2", label: "Reefer Double" },
-  { value: "RZ", label: "Reefer HazMat" },
-  { value: "RN", label: "Reefer Intermodal" },
-  { value: "RL", label: "Reefer Logistics" },
-  { value: "RV", label: "Reefer or Vented Van" },
-  { value: "RM", label: "Reefer w/Team" },
-  { value: "RM", label: "Reefer w/Pallet Exchange" },
-  { value: "RG", label: "Removable Gooseneck" },
-  { value: "SD", label: "Step Deck" },
-  { value: "SR", label: "Step Deck or RGN" },
-  { value: "SN", label: "StepDeck Conestoga" },
-  { value: "SB", label: "Straight Box Truck" },
-  { value: "ST", label: "Stretch Trailer" },
-  { value: "TA", label: "Tanker Aluminum" },
-  { value: "TN", label: "Tanker Intermodal" },
-  { value: "TS", label: "Tanker Steel" },
-  { value: "TT", label: "Tanker And Trailer" },
-  { value: "V", label: "Van" },
-  { value: "VA", label: "Van Air-Ride" },
-  { value: "VS", label: "Van Conestoga" },
-  { value: "V2", label: "Van Double" },
-  { value: "VZ", label: "Van HazMat" },
-  { value: "VH", label: "Van Hotshot" },
-  { value: "VI", label: "Van Insulated" },
-  { value: "VN", label: "Van Intermodal" },
-  { value: "VG", label: "Van Lift-Gate" },
-  { value: "VL", label: "Van Logistics" },
-  { value: "OT", label: "Van Open-top" },
-  { value: "VB", label: "Van Roller bed" },
-  { value: "V3", label: "Van Triple" },
-  { value: "VV", label: "Van Vented" },
-  { value: "VF", label: "Van or Flatbed" },
-  { value: "VT", label: "Van or Flatbed w/Tarps" },
-  { value: "VR", label: "Van or Reefer" },
-  { value: "VC", label: "Van w/Curtains" },
-  { value: "VM", label: "Van w/Team" },
-  { value: "VW", label: "Van w/Blanket Wrap" },
-  { value: "VP", label: "Van w/Pallet Exchange" },
+
+  { label: "Auto Carrier", value: "Auto Carrier" },
+  { label: "B-Train", value: "B-Train" },
+  { label: "Conestoga", value: "Conestoga" },
+  { label: "Container", value: "Container" },
+  { label: "Container Insulated", value: "Container Insulated" },
+  { label: "Container Refrigerated", value: "Container Refrigerated" },
+  { label: "Conveyor", value: "Conveyor" },
+  { label: "Double Drop", value: "Double Drop" },
+  { label: "Drop Deck Landoll", value: "Drop Deck Landoll" },
+  { label: "Dump Trailer", value: "Dump Trailer" },
+  { label: "Flatbed", value: "Flatbed" },
+  { label: "Flatbed Air-Ride", value: "Flatbed Air-Ride" },
+  { label: "Flatbed Conestoga", value: "Flatbed Conestoga" },
+  { label: "Flatbed Double", value: "Flatbed Double" },
+  { label: "Flatbed HazMat", value: "Flatbed HazMat" },
+  { label: "Flatbed Hotshot", value: "Flatbed Hotshot" },
+  { label: "Flatbed Maxi", value: "Flatbed Maxi" },
+  { label: "Flatbed or Step Deck", value: "Flatbed or Step Deck" },
+  { label: "Flatbed w/Sides", value: "Flatbed w/Sides" },
+  { label: "Flatbed w/Tarps", value: "Flatbed w/Tarps" },
+  { label: "Flatbed w/Team", value: "Flatbed w/Team" },
+  { label: "Flatbed, Over Dimension", value: "Flatbed, Over Dimension" },
+  { label: "Flatbed, w/Chains", value: "Flatbed, w/Chains" },
+  { label: "Flatbed/Van/Reefer", value: "Flatbed/Van/Reefer" },
+  { label: "Hopper Bottom", value: "Hopper Bottom" },
+  { label: "Insulated Van or Reefer", value: "Insulated Van or Reefer" },
+  { label: "Lowboy", value: "Lowboy" },
+  { label: "Lowboy or RGN", value: "Lowboy or RGN" },
+  { label: "Lowboy, Over Dimension", value: "Lowboy, Over Dimension" },
+  { label: "Moving Van", value: "Moving Van" },
+  { label: "Pneumatic", value: "Pneumatic" },
+  { label: "Power Only", value: "Power Only" },
+  { label: "Reefer", value: "Reefer" },
+  { label: "Reefer Air-Ride", value: "Reefer Air-Ride" },
+  { label: "Reefer Double", value: "Reefer Double" },
+  { label: "Reefer HazMat", value: "Reefer HazMat" },
+  { label: "Reefer Intermodal", value: "Reefer Intermodal" },
+  { label: "Reefer Logistics", value: "Reefer Logistics" },
+  { label: "Reefer or Vented Van", value: "Reefer or Vented Van" },
+  { label: "Reefer w/Team", value: "Reefer w/Team" },
+  { label: "Reefer, w/Pallet Exchange", value: "Reefer, w/Pallet Exchange" },
+  { label: "Removable Gooseneck", value: "Removable Gooseneck" },
+  { label: "Step Deck", value: "Step Deck" },
+  { label: "Step Deck or RGN", value: "Step Deck or RGN" },
+  { label: "Stepdeck Conestoga", value: "Stepdeck Conestoga" },
+  { label: "Straight Box Truck", value: "Straight Box Truck" },
+  { label: "Stretch Trailer", value: "Stretch Trailer" },
+  { label: "Tanker Aluminum", value: "Tanker Aluminum" },
+  { label: "Tanker Intermodal", value: "Tanker Intermodal" },
+  { label: "Tanker Steel", value: "Tanker Steel" },
+  { label: "Truck and Trailer", value: "Truck and Trailer" },
+  { label: "Van", value: "Van" },
+  { label: "Van Air-Ride", value: "Van Air-Ride" },
+  { label: "Van Conestoga", value: "Van Conestoga" },
+  { label: "Van Double", value: "Van Double" },
+  { label: "Van HazMat", value: "Van HazMat" },
+  { label: "Van Hotshot", value: "Van Hotshot" },
+  { label: "Van Insulated", value: "Van Insulated" },
+  { label: "Van Intermodal", value: "Van Intermodal" },
+  { label: "Van Lift-Gate", value: "Van Lift-Gate" },
+  { label: "Van Logistics", value: "Van Logistics" },
+  { label: "Van Open-Top", value: "Van Open-Top" },
+  { label: "Van Roller Bed", value: "Van Roller Bed" },
+  { label: "Van Triple", value: "Van Triple" },
+  { label: "Van Vented", value: "Van Vented" },
+  { label: "Van or Flatbed", value: "Van or Flatbed" },
+  { label: "Van or Flatbed w/Tarps", value: "Van or Flatbed w/Tarps" },
+  { label: "Van or Reefer", value: "Van or Reefer" },
+  { label: "Van w/Curtains", value: "Van w/Curtains" },
+  { label: "Van w/Team", value: "Van w/Team" },
+  { label: "Van, w/Blanket Wrap", value: "Van, w/Blanket Wrap" },
+  { label: "Van, w/Pallet Exchange", value: "Van, w/Pallet Exchange" },
 ];
 
 const options_general = [
@@ -93,12 +95,12 @@ const options_general = [
 
 type formdata = {
   origin: null | string;
-  origin_dh: null | string;
+  origin_dh: "150" | string;
   destination: null | string;
-  destination_dh: null | string;
+  destination_dh: "150" | string;
   general_specifc: null | string;
-  truck_type_general: string [];
-  truck_type_specific: string [];
+  truck_type_general: string[];
+  truck_type_specific: string[];
   length: null | string;
   weight: null | string;
   full_partial: "Both" | string;
@@ -108,6 +110,7 @@ type formdata = {
 
 export default function TruckersEdge() {
   const [showSpec, setshowSpec] = useState(false);
+  const [loading, setloading] = useState(false);
   const [selected, setSelected] = useState<{ value: string; label: string }[]>(
     []
   );
@@ -116,9 +119,9 @@ export default function TruckersEdge() {
   );
   const [formData, setFormData] = useState<formdata>({
     origin: null,
-    origin_dh: null,
+    origin_dh: "150",
     destination: null,
-    destination_dh: null,
+    destination_dh: "150",
     general_specifc: null,
     truck_type_general: [],
     truck_type_specific: [],
@@ -130,25 +133,25 @@ export default function TruckersEdge() {
   });
 
   const formref = useRef<HTMLFormElement | null>(null);
-  const resetform = () => {
-    if (formref.current) {
-      formref.current.reset();
-      setFormData({
-        origin: null,
-        origin_dh: null,
-        destination: null,
-        destination_dh: null,
-        general_specifc: null,
-        truck_type_general: [],
-        truck_type_specific: [],
-        length: null,
-        weight: null,
-        full_partial: "Both",
-        startDate: null,
-        endDate: null,
-      });
-    }
-  };
+  // const resetform = () => {
+  //   if (formref.current) {
+  //     formref.current.reset();
+  //     setFormData({
+  //       origin: null,
+  //       origin_dh: "150",
+  //       destination: null,
+  //       destination_dh: "150",
+  //       general_specifc: null,
+  //       truck_type_general: [],
+  //       truck_type_specific: [],
+  //       length: null,
+  //       weight: null,
+  //       full_partial: "Both",
+  //       startDate: null,
+  //       endDate: null,
+  //     });
+  //   }
+  // };
   useEffect(() => {
     setFormData({
       ...formData,
@@ -162,8 +165,15 @@ export default function TruckersEdge() {
       truck_type_general: selected_general.map((v) => v.value),
     });
   }, [selected_general]);
-
-  const submitform = async () => {
+  function downloadFile(filePath: string) {
+    var link = document.createElement('a');
+    link.href = filePath;
+    link.download = filePath.substr(filePath.lastIndexOf('/') + 1);
+    link.click();
+  }
+  const submitform = async (e: any) => {
+    e.preventDefault();
+    setloading(true);
     let res = fetch(
       "http://localhost:3333/truckersedge",
       {
@@ -174,37 +184,37 @@ export default function TruckersEdge() {
         body: JSON.stringify(formData),
       }
     ).then((res) => {
-      
-      console.log(formData, res);
-    });
-    // if (formref.current) {
-    //  formref.current.reset();
-    //  setFormData({
-    //    origin: null,
-    //    origin_dh: null,
-    //    destination: null,
-    //    destination_dh: null,
-    //    general_specifc: null,
-    //    truck_type_general: null,
-    //    truck_type_specific: [],
-    //    length: null,
-    //    weight: null,
-    //    full_partial: null,
-    //    startDate: null,
-    //    endDate: null,
-    //  });
-    // }
+      downloadFile("http://localhost:3333/csv/Truckers_Edge.csv");
+      setloading(false);
+      setFormData({
+        ...formData,
+        origin: null,
+        origin_dh: "150",
+        destination: null,
+        destination_dh: "150",
+        general_specifc: null,
+        truck_type_general: [],
+        truck_type_specific: [],
+        length: null,
+        weight: null,
+        full_partial: "Both",
+        startDate: null,
+        endDate: null,
+      });
+    })
+    // });
+    // 
   };
 
   return (
-    <form className="w-full	  rounded-lg" ref={formref}>
+    <form className="w-full	rounded-lg" onSubmit={submitform}>
       <h2 className=" dark:text-white text-center text-2xl">Truckers Edge </h2>
       <div className="flex w-full justify-between gap-3 flex-wrap">
         <label className="flex flex-col my-2 flex-grow">
           <span className="dark:text-white text-black mb-2 text-base capitalize">Origin:</span>
           <input required
             onChange={(e) => {
-              setFormData({ ...formData, origin: e.target.value });
+              setFormData({ ...formData, origin: e.target.value.trim() });
             }}
             type="text"
             className="rounded-md text-base"
@@ -213,7 +223,7 @@ export default function TruckersEdge() {
         </label>
         <label className="flex flex-col my-2 w-full sm:max-w-[150px]">
           <span className="dark:text-white text-black mb-2 text-base capitalize">Dh-O:</span>
-          <input required
+          <input
             onChange={(e) => {
               setFormData({ ...formData, origin_dh: e.target.value });
             }}
@@ -228,7 +238,7 @@ export default function TruckersEdge() {
           <span className="dark:text-white text-black mb-2 text-base capitalize">
             Destination:
           </span>
-          <input required
+          <input
             onChange={(e) => {
               setFormData({ ...formData, destination: e.target.value });
             }}
@@ -239,7 +249,7 @@ export default function TruckersEdge() {
         </label>
         <label className="flex flex-col my-2 w-full sm:max-w-[150px]">
           <span className="dark:text-white text-black mb-2 text-base capitalize">Dh-D:</span>
-          <input required 
+          <input
             onChange={(e) => {
               setFormData({ ...formData, destination_dh: e.target.value });
             }}
@@ -295,26 +305,6 @@ export default function TruckersEdge() {
             labelledBy={"Truck type"}
           />
         )}
-        {/* {!showSpec && (
-          <select
-            className="rounded-md text-base"
-            onChange={(e) => {
-              setFormData({ ...formData, truck_type_general: e.target.value });
-            }}
-          >
-            <option value="V">Vans,Standard</option>
-            <option value="F">Flatbeds</option>
-            <option value="R">Reefers</option>
-            <option value="N">Conestoga</option>
-            <option value="C">Containers</option>
-            <option value="D">Decks,Standard</option>
-            <option value="B">Dry bulk</option>
-            <option value="Z">Hazardous materials</option>
-            <option value="O">Other equipement</option>
-            <option value="T">Tankers</option>
-            <option value="S">Vans Specialized</option>
-          </select>
-        )} */}
       </label>
       <div className="flex w-full justify-between gap-3 flex-wrap">
         <label className="flex flex-col my-2 flex-grow">
@@ -329,7 +319,7 @@ export default function TruckersEdge() {
           />
         </label>
         <label className="flex flex-col my-2 flex-grow">
-          <span className="text-black mb-2 text-base capitalize">Weight:</span>
+          <span className="dark:text-white mb-2 text-base capitalize">Weight:</span>
           <input required
             onChange={(e) => {
               setFormData({ ...formData, weight: e.target.value });
@@ -368,7 +358,7 @@ export default function TruckersEdge() {
           />
         </label>
         <label className="flex flex-col my-2 flex-grow">
-          <span className=" dark:text-whitetext-black mb-2 text-base capitalize">
+          <span className="dark:text-white mb-2 text-base capitalize">
             End date:
           </span>
           <input required
@@ -383,18 +373,25 @@ export default function TruckersEdge() {
       </div>
 
       <div className="flex w-full justify-evenly flex-wrap gap-3">
-        <div
+        {/* <div
+          // onClick={resetform}
+          // type="submit"
           onClick={resetform}
           className=" my-2 min-w-full sm:flex-grow sm:min-w-0 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  sm:w-auto px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Reset
-        </div>
-        <div
-          onClick={submitform}
-          className="  my-2 min-w-full sm:flex-grow sm:min-w-0 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  sm:w-auto px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Submit
-        </div>
+        </div> */}
+        {(!loading)
+          ? <button
+            // onClick={submitform}
+            type="submit"
+            className="  my-2 min-w-full sm:flex-grow sm:min-w-0 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  sm:w-auto px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Submit
+          </button>
+          :
+          <Loading />
+        }
       </div>
     </form>
   );
