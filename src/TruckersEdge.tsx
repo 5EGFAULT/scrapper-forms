@@ -132,26 +132,7 @@ export default function TruckersEdge() {
     endDate: null,
   });
 
-  const formref = useRef<HTMLFormElement | null>(null);
-  // const resetform = () => {
-  //   if (formref.current) {
-  //     formref.current.reset();
-  //     setFormData({
-  //       origin: null,
-  //       origin_dh: "150",
-  //       destination: null,
-  //       destination_dh: "150",
-  //       general_specifc: null,
-  //       truck_type_general: [],
-  //       truck_type_specific: [],
-  //       length: null,
-  //       weight: null,
-  //       full_partial: "Both",
-  //       startDate: null,
-  //       endDate: null,
-  //     });
-  //   }
-  // };
+
   useEffect(() => {
     setFormData({
       ...formData,
@@ -184,30 +165,53 @@ export default function TruckersEdge() {
         body: JSON.stringify(formData),
       }
     ).then((res) => {
-      downloadFile("http://localhost:3333/csv/Truckers_Edge.csv");
-      setloading(false);
-      setFormData({
-        ...formData,
-        origin: null,
-        origin_dh: "150",
-        destination: null,
-        destination_dh: "150",
-        general_specifc: null,
-        truck_type_general: [],
-        truck_type_specific: [],
-        length: null,
-        weight: null,
-        full_partial: "Both",
-        startDate: null,
-        endDate: null,
-      });
+      if (res.status === 200) {
+        downloadFile("http://localhost:3333/csv/Truckers_Edge.csv");
+        setloading(false);
+        // setFormData({
+        //   ...formData,
+        //   origin: null,
+        //   origin_dh: "150",
+        //   destination: null,
+        //   destination_dh: "150",
+        //   general_specifc: null,
+        //   truck_type_general: [],
+        //   truck_type_specific: [],
+        //   length: null,
+        //   weight: null,
+        //   full_partial: "Both",
+        //   startDate: null,
+        //   endDate: null,
+        // });
+      }
+      if (res.status === 500) {
+        setloading(false);
+        // setFormData({
+        //   ...formData,
+        //   origin: null,
+        //   origin_dh: "150",
+        //   destination: null,
+        //   destination_dh: "150",
+        //   general_specifc: null,
+        //   truck_type_general: [],
+        //   truck_type_specific: [],
+        //   length: null,
+        //   weight: null,
+        //   full_partial: "Both",
+        //   startDate: null,
+        //   endDate: null,
+        // });
+        alert("There is no data for this search Just try again");
+      }
     })
     // });
     // 
   };
 
   return (
-    <form className="w-full	rounded-lg" onSubmit={submitform}>
+    <form className="w-full	rounded-lg"
+      onSubmit={submitform}
+    >
       <h2 className=" dark:text-white text-center text-2xl">Truckers Edge </h2>
       <div className="flex w-full justify-between gap-3 flex-wrap">
         <label className="flex flex-col my-2 flex-grow">
@@ -265,6 +269,7 @@ export default function TruckersEdge() {
             type="radio"
             name="spec"
             value="General"
+            checked={formData.general_specifc == null || formData.general_specifc == "General"}
             onChange={(e) => {
               setFormData({ ...formData, general_specifc: e.target.value });
             }}
@@ -276,6 +281,7 @@ export default function TruckersEdge() {
           <input required
             type="radio"
             name="spec"
+            checked={formData.general_specifc == "Specific"}
             onChange={(e) => {
               setFormData({ ...formData, general_specifc: e.target.value });
             }}
@@ -383,8 +389,9 @@ export default function TruckersEdge() {
         </div> */}
         {(!loading)
           ? <button
-            // onClick={submitform}
+            // o={submitform}
             type="submit"
+            // onClick={submitform}
             className="  my-2 min-w-full sm:flex-grow sm:min-w-0 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  sm:w-auto px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Submit
