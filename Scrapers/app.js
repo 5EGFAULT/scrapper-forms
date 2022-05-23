@@ -51,7 +51,7 @@ app.post('/truckersedge', (req, res) => {
         const login = "Dispatcher@thejpoperations.com";
         const password = "Fiverrextension1!";
         const browser = await puppeteer.launch({
-            headless: !false, args: ['--window-size=1920,1080'],
+            headless: false, args: ['--window-size=1920,1080'],
             defaultViewport: null
         });
         const page = await browser.newPage();
@@ -74,7 +74,7 @@ app.post('/truckersedge', (req, res) => {
                 await page.click('#mat-dialog-0 > dat-prewarn-dialog-component > div > mat-dialog-actions > button.mat-focus-indicator.mat-raised-button.mat-button-base.mat-primary')
         }).then(async () => {
             await sleep(2000)
-            await page.type("#searchform-city-origin", origin)
+            await page.type("#searchform-city-origin", origin, { delay: 100 })
             await page.waitForSelector('#searchform-dho')
             await page.evaluate((origin_dh) => {
                 document.querySelector("#searchform-dho").value = origin_dh != "" ? origin_dh : "100"
@@ -82,7 +82,13 @@ app.post('/truckersedge', (req, res) => {
             }, origin_dh)
 
             await page.waitForSelector('#searchform-city-destination')
-            await page.type("#searchform-city-destination", (destination == null) ? "" : destination)
+            await page.type("#searchform-city-destination", (destination == null) ? "" : destination , { delay: 100 }).then(async () => {
+                // #mat-option-31 > span
+                await sleep(1000)
+                await page.waitForSelector('#mat-option-33 > span')
+                await page.click('#mat-option-33 > span')
+                console.log("span clicked");
+            })
             if (destination_dh != null) {
                 await page.waitForSelector("#searchform-dhd")
                 await page.evaluate((destination_dh) => {

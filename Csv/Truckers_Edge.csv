@@ -1,0 +1,165 @@
+POSTED,PICKUP,TRUCK,DH-O,ORIGIN,DH-D,DESTINATION,TRIP,F/P,RATE,LENGTH,WEIGHT,COMPANY,CONTACT,FACTORING
+ 05/23 5:46pm , 5/23 , V , 167 ," Mt Pleasant, PA", — ," Canonsburg, PA", 46 , F , — , 48 ," 10,000 ", Guided Logistics , (412) 697-0055 , Available 
+ 05/23 5:46pm , 5/23 , VR , 240 ," Goshen, IN", — ," El Paso, TX"," 1,558 ", F , — , 48 ," 5,020 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:45pm , 5/23 , V , 148 ," Glassport, PA", — ," Itasca, IL", 503 , F ," $1,300 ", — ," 43,000 ", Axle Logistics Llc , (888) 500-1699 x1248 , Available 
+ 05/23 5:45pm , 5/23 , V , 132 ," Pittsburgh, PA", — ," Itasca, IL", 486 , F ," $1,200 ", — ," 43,000 ", Axle Logistics Llc , (888) 500-1699 x1248 , Available 
+ 05/23 5:45pm , 5/23 , V , 156 ," Bunola, PA", — ," Hermitage, PA", 91 , F , $330 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:45pm , 5/23 , V , 156 ," Bunola, PA", — ," Meadville, PA", 113 , F , $399 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:45pm , 5/23 , V , 156 ," Bunola, PA", — ," Salem, OH", 85 , F , $334 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:45pm , 5/23 , V , 169 ," Ruffs Dale, PA", — ," Effingham, IL", 521 , F ," $1,000 ", 48 ," 37,190 ", Giltner Logistic Services Inc , (208) 260-4930 , Available 
+ 05/23 5:45pm , 5/23 , V , 168 ," Tarrs, PA", — ," Effingham, IL", 521 , F ," $1,100 ", 48 ," 39,000 ", Giltner Logistic Services Inc , (208) 260-4930 , Available 
+ 05/23 5:44pm , 5/23 , V , 181 ," Walled Lake, MI", — ," Elk Grove Vlg, IL", 299 , P , $400 , 15 ," 8,500 ", BVB Freight , (425) 450-7508 , Unavailable 
+ 05/23 5:43pm , 5/23 , V , 194 ," Buffalo, NY", — ," Tavares, FL"," 1,188 ", F , — , 48 ," 7,300 ", Midwest Angels Logistics , (573) 486-1116 x1 , Available 
+ 05/23 5:43pm , 5/23 , V , 181 ," Walled Lake, MI", — ," Elk Grove Vlg, IL", 299 , P , $400 , 15 ," 9,000 ", PAP Logistics Inc , (630) 672-8336 , Unavailable 
+ 05/23 5:43pm , 5/23 , V , 169 ," Detroit, MI", — ," Elk Grove Vlg, IL", 309 , P , $300 , 8 ," 8,000 ", PAP Logistics Inc , (630) 672-8336 , Unavailable 
+ 05/23 5:42pm , 5/23 , VF , 80 ," Sugarcreek, OH", — ," Springfield, IL", 493 , F , — , 48 ," 44,000 ", SUNTECK TRANSPORT CO LLC , (316) 260-4435 , Available 
+ 05/23 5:42pm , 5/23 , V , 251 ," Cincinnati, OH", — ," Mansfield, TX", 975 , P ," $1,600 ", 14 ," 25,000 ", Priority 1 Inc , Josh.sagar@priority1.com , Available 
+ 05/23 5:41pm , 5/23 , VR , 231 ," Ft Recovery, OH", — ," Strongsville, OH", 211 , P , — , 15 ," 3,900 ", Express Lane Transportation Inc , (440) 248-9180 , Available 
+ 05/23 5:41pm , 5/23 , V , 212 ," Fairmont, WV", — ," Laredo, TX"," 1,617 ", P , — , 28 ," 22,000 ", Wel Logistics Inc/Wel Companies Inc , (480) 747-9872 , Available 
+ 05/23 5:41pm , 5/23 , V , 236 ," Middletown, OH", — ," Ontario, CA"," 2,149 ", P ," $1,200 ", 6 ," 4,600 ", SUNTECK TRANSPORT CO LLC , (978) 209-2400 x279 , Available 
+ 05/23 5:40pm , 5/23 , V , 82 ," Dover, OH", — ," Hialeah, FL"," 1,204 ", P ," $1,600 ", 24 ," 4,000 ", Landstar Ranger Inc , (445) 465-2711 , Available 
+ 05/23 5:40pm , 5/23 , VR , 126 ," Corry, PA", — ," Schertz, TX"," 1,563 ", P , — , 17 ," 3,000 ", Shield Freight Inc , (540) 707-5990 , Unavailable 
+ 05/23 5:40pm , 5/23 , V , 132 ," Pittsburgh, PA", — ," Santa Clara, CA"," 2,601 ", P ," $1,100 ", 10 ," 5,000 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:40pm , 5/23 , V , 237 ," State College, PA", — ," Canyon Country, CA"," 2,565 ", P ," $1,000 ", 10 ," 5,000 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:40pm , 5/23 , V , 224 ," Kimball, MI", — ," Whittier, CA"," 2,329 ", P , $700 , 5 ," 2,500 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:40pm , 5/23 , V , 259 ," Rochester, NY", — ," Hayward, CA"," 2,731 ", P , $800 , 5 ," 2,500 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:40pm , 5/23 , V , 226 ," Altoona, PA", — ," Los Angeles, CA"," 2,538 ", P ," $1,500 ", 5 ," 2,500 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:40pm , 5/23 , V , 237 ," State College, PA", — ," Tustin, CA"," 2,572 ", P ," $3,000 ", 15 ," 7,500 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:40pm , 5/23 , V , 156 ," Bunola, PA", — ," Mentor, OH", 162 , F , $560 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:40pm , 5/23 , V , 156 ," Bunola, PA", — ," Avon, OH", 173 , F , $579 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:40pm , 5/23 , V , 16 ," Berea, OH", — ," Johnstown, PA", 198 , F , — , 48 ," 25,000 ", All Pro Freight Systems Inc , (800) 837-5779 , Available 
+ 05/23 5:40pm , 5/23 , V , 132 ," Pittsburgh, PA", — ," Laredo, TX"," 1,653 ", F , — , — ," 34,000 ", Traffic Tech , (312) 465-1440 , Available 
+ 05/23 5:40pm , 5/23 , VR , 132 ," Pittsburgh, PA", — ," Laredo, TX"," 1,653 ", F , — , — ," 31,000 ", Traffic Tech , (905) 629-1876 , Available 
+ 05/23 5:40pm , 5/23 , V , 12 ," Euclid, OH", — ," San Marcos, TX"," 1,425 ", F ," $1,900 ", 48 ," 44,000 ", AKF Staar LLC , (864) 416-4215 , Available 
+ 05/23 5:40pm , 5/23 , V , 251 ," Cincinnati, OH", — ," Madera, CA"," 2,328 ", F , — , 1 , 400 , Edge Logistics Llc , (312) 319-4766 x1 , Available 
+ 05/23 5:39pm , 5/23 , V , 78 ," Millersburg, OH", — ," Beavertown, PA", 313 , F , — , 48 ," 44,000 ", Landstar Ranger Inc , (667) 237-7291 , Available 
+ 05/23 5:38pm , 5/23 , V , 212 ," Sturgis, MI", — ," York, PA", 547 , F , — , — ," 44,000 ", Warren Transport/Warren Specialized Logistics Inc , (800) 206-7980 , Available 
+ 05/23 5:37pm , 5/23 , VF , 193 ," Waterloo, IN", — ," Washington Ch, OH", 203 , F , $800 , 48 ," 45,000 ", Us Logistics Llc , (407) 979-4809 , Unavailable 
+ 05/23 5:36pm , 5/23 , V , 181 ," Walled Lake, MI", — ," Elk Grove Vlg, IL", 299 , P , $450 , 15 ," 8,500 ", King Freight Inc , (773) 492-3772 x101 , Available 
+ 05/23 5:36pm , 5/23 , FR , 24 ," Twinsburg, OH", — ," Tampa, FL"," 1,105 ", P , — , 8 ," 10,000 ", Timeline Freight Brokers Llc , (321) 666-8606 , Available 
+ 05/23 5:35pm , 5/23 , V , 251 ," Cincinnati, OH", — ," Ontario, CA"," 2,147 ", P ," $1,200 ", 6 ," 4,600 ", SUNTECK TRANSPORT CO LLC , (978) 209-2400 x279 , Available 
+ 05/23 5:35pm , 5/23 , V , 102 ," Erie, PA", — ," River Grove, IL", 458 , P , $500 , 5 ," 2,500 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:35pm , 5/23 , VR , 132 ," Pittsburgh, PA", — ," Laredo, TX"," 1,653 ", F , — , 48 ," 11,516 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:35pm , 5/23 , VR , 157 ," Grove City, OH", — ," Panama City, FL", 837 , F , — , 48 ," 6,000 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:35pm , 5/23 , VR , 132 ," Pittsburgh, PA", — ," Laredo, TX"," 1,653 ", P , — , 12 ," 11,516 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:35pm , 5/23 , VR , 137 ," Blawnox, PA", — ," Laredo, TX"," 1,662 ", P , — , 12 ," 11,516 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:35pm , 5/23 , VR , 137 ," Blawnox, PA", — ," Laredo, TX"," 1,662 ", F , — , 48 ," 11,516 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:35pm , 5/23 , VR , 157 ," Grove City, OH", — ," Panama City, FL", 837 , P , — , 27 ," 6,000 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:34pm , 5/23 , V , 181 ," Walled Lake, MI", — ," Elk Grove Vlg, IL", 299 , P , $450 , 15 ," 8,500 ", Compass Logistics , m.stojanovikj@compasslogistics.net , Available 
+ 05/23 5:34pm , 5/23 , V , 169 ," Detroit, MI", — ," Elk Grove Vlg, IL", 309 , P , $360 , 8 ," 8,300 ", Compass Logistics , m.stojanovikj@compasslogistics.net , Available 
+ 05/23 5:34pm , 5/23 , V , 208 ," Ft Wayne, IN", — ," Waverly, OH", 225 , F , — , 48 ," 40,000 ", Ari Logistics Llc , (773) 832-8600 , Available 
+ 05/23 5:32pm , 5/23 , V , 156 ," Romulus, MI", — ," Auburn, CA"," 2,253 ", P ," $1,100 ", 13 ," 1,150 ", Lynn Trucking Inc , (734) 946-4033 , Unavailable 
+ 05/23 5:32pm , 5/23 , V , 251 ," Cincinnati, OH", — ," Mansfield, TX", 975 , P ," $1,500 ", 16 ," 24,560 ", Priority 1 Inc , (501) 372-3925 , Available 
+ 05/23 5:31pm , 5/23 , V , 217 ," Coldwater, OH", — ," Harrisburg, PA", 482 , F ," $1,800 ", — ," 11,000 ", Partnership Llc , (800) 599-2902 x2880 , Available 
+ 05/23 5:30pm , 5/23 , V , 82 ," Dover, OH", — ," Hialeah, FL"," 1,204 ", P , — , 24 ," 10,000 ", Landstar Ranger Inc , (332) 238-2183 , Available 
+ 05/23 5:30pm , 5/23 , V , 190 ," Clinton Twp, MI", — ," San Diego, CA"," 2,356 ", F , — , 12 ," 1,230 ", Logistic Dynamics Inc/LDI Trucking Inc , (716) 250-3477 x1333 , Available 
+ 05/23 5:30pm , 5/23 , VR , 132 ," Pittsburgh, PA", — ," Miami, FL"," 1,225 ", F , — , 48 ," 4,720 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:30pm , 5/23 , VR , 132 ," Pittsburgh, PA", — ," Miami, FL"," 1,225 ", P , — , 17 ," 4,720 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:25pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," N Versailles, PA", 75 , F , $266 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:25pm , 5/23 , V , 156 ," Bunola, PA", — ," Rocky River, OH", 160 , F , $560 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:25pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Cranberry Twp, PA", 110 , F , $402 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:25pm , 5/23 , V , 156 ," Romulus, MI", — ," Santa Ana, CA"," 2,257 ", P , $800 , 9 , 350 , Amb Logistic , transport@amblogistic.us , Available 
+ 05/23 5:25pm , 5/23 , V , 156 ," Romulus, MI", — ," Odessa, TX"," 1,487 ", P , $600 , 9 , 350 , Amb Logistic , transport@amblogistic.us , Available 
+ 05/23 5:24pm , 5/23 , VR , 251 ," Cincinnati, OH", — ," Itasca, IL", 319 , F , $700 , 48 ," 42,000 ", Shram Logistics Solutions , (859) 963-3019 , Available 
+ 05/23 5:23pm , 5/23 , V , 97 ," New Castle, PA", — ," Pottstown, PA", 322 , F ," $1,500 ", 40 ," 3,775 ", Global Tranz , (877) 772-0256 , Available 
+ 05/23 5:22pm , 5/23 , V , 24 ," Twinsburg, OH", — ," Tampa, FL"," 1,105 ", P , $800 , 12 ," 10,000 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:22pm , 5/23 , V , 160 ," Allen Park, MI", — ," Medley, FL"," 1,345 ", P , — , 16 ," 13,000 ", Unify Logistic Solutions LLC , (800) 970-3292 , Available 
+ 05/23 5:21pm , 5/23 , V , 142 ," Columbus, OH", — ," Houston, TX"," 1,159 ", P , $800 , 15 ," 2,682 ", Associated Logistics Group , (877) 744-7254 , Available 
+ 05/23 5:20pm , 5/23 , VT , 134 ," Carey, OH", — ," Thomasville, PA", 448 , F , — , — ," 45,597 ", Dsv Road Inc , (618) 310-0092 , Available 
+ 05/23 5:20pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Johnstown, PA", 93 , F , $322 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:20pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Pittsburgh, PA", 79 , F , $285 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:20pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Greensburg, PA", 66 , F , $258 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:20pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Bethel Park, PA", 73 , F , $281 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:20pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Tarentum, PA", 96 , F , $347 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 5:20pm , 5/23 , V , 141 ," Monroeville, PA", — ," Leesburg, FL", 962 , P ," $1,000 ", 10 ," 5,000 ", Becker Logistics Inc , (630) 529-0700 x5080 , Available 
+ 05/23 5:20pm , 5/23 , VR , 194 ," Sidney, OH", — ," Chicago, IL", 259 , F , — , — ," 39,049 ", England Logistics Inc , (866) 549-0563 , Available 
+ 05/23 5:20pm , 5/23 , V , 181 ," Walled Lake, MI", — ," Elk Grove Vlg, IL", 299 , P , $436 , 15 ," 8,500 ", Landstar Ranger , (346) 201-7588 , Available 
+ 05/23 5:20pm , 5/23 , V , 169 ," Detroit, MI", — ," Elk Grove Vlg, IL", 309 , P , $336 , 4 ," 8,300 ", Landstar Ranger , (346) 201-7588 , Available 
+ 05/23 5:20pm , 5/23 , VR , 0 ," Cleveland, OH", — ," Suitland, MD", 385 , F , — , 48 ," 42,000 "," Bug Juice International, Inc ", (810) 225-2045 , Unavailable 
+ 05/23 5:19pm , 5/23 , V , 160 ," Allen Park, MI", — ," Medley, FL"," 1,345 ", P , — , 16 ," 13,000 ", Unify Logistic Solutions LLC , kevin@unifylogisticsolutions.com , Available 
+ 05/23 5:16pm , 5/23 , V , 196 ," Somerset, PA", — ," Dallas, TX"," 1,269 ", P , — , 26 ," 13,000 ", Carrier Lynx LLC , (913) 660-4322 , Available 
+ 05/23 5:15pm , 5/23 , V , 169 ," Detroit, MI", — ," Ft Lauderdale, FL"," 1,331 ", P ," $1,300 ", 12 ," 9,281 ", Top Worldwide Llc , (419) 877-8359 , Available 
+ 05/23 5:14pm , 5/23 , V , 170 ," Ann Arbor, MI", — ," Hutchins, TX"," 1,164 ", F ," $2,300 ", 48 ," 44,500 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:14pm , 5/23 , V , 119 ," Coshocton, OH", — ," Jacksonville, FL", 809 , P , — , 27 ," 12,336 ", Globaltranz Enterprises Llc , (239) 350-5518 , Available 
+ 05/23 5:13pm , 5/23 , V , 119 ," Cambridge, OH", — ," Hegins, PA", 339 , F ," $1,567 ", 48 , — , Jb Hunt Transport Services Inc , (866) 360-6711 , Available 
+ 05/23 5:12pm , 5/23 , VR , 253 ," Warsaw, IN", — ," Allentown, PA", 636 , F ," $1,700 ", 48 ," 42,000 ", Shram Logistics Solutions , (859) 963-3019 , Available 
+ 05/23 5:12pm , 5/23 , VR , 253 ," Warsaw, IN", — ," Philadelphia, PA", 664 , F ," $1,700 ", 48 ," 42,000 ", Shram Logistics Solutions , (859) 963-3019 , Available 
+ 05/23 5:10pm , 5/23 , VR , 220 ," Metamora, MI", — ," Souderton, PA", 625 , P , — , 26 ," 14,200 ", Trans 58 Edinboro , (800) 685-7671 , Available 
+ 05/23 5:10pm , 5/23 , V , 142 ," Columbus, OH", — ," Bradenton, FL"," 1,065 ", P ," $1,700 ", 16 ," 6,000 ", Landstar Ranger Inc , (332) 238-2183 , Available 
+ 05/23 5:10pm , 5/23 , V , 12 ," Euclid, OH", — ," W Palm Beach, FL"," 1,189 ", F , — , — ," 20,000 ", Rgl Specialty Services Llc , (920) 471-4456 , Available 
+ 05/23 5:10pm , 5/23 , VR , 150 ," Ford City, PA", — ," Opa Locka, FL"," 1,198 ", P , — , 17 ," 4,720 ", Total Quality Logistics Inc , (800) 580-3101 x37778 , Available 
+ 05/23 5:10pm , 5/23 , VR , 137 ," Blawnox, PA", — ," Laredo, TX"," 1,662 ", P , — , 12 ," 11,516 ", Total Quality Logistics Inc , (800) 580-3101 x37778 , Available 
+ 05/23 5:06pm , 5/23 , VR , 244 ," Hornell, NY", — ," Chicago, IL", 586 , F ," $1,300 ", 48 ," 43,800 ", Capital Logistics Group LLC/CLG Transportation , coveryourtrucks@clgdelivers.com , Available 
+ 05/23 5:06pm , 5/23 , VR , 259 ," Rochester, NY", — ," Chicago, IL", 614 , F ," $1,300 ", 48 ," 43,800 ", Capital Logistics Group LLC/CLG Transportation , coveryourtrucks@clgdelivers.com , Available 
+ 05/23 5:05pm , 5/23 , V , 142 ," Columbus, OH", — ," Bradenton, FL"," 1,065 ", P ," $1,500 ", 16 ," 6,000 ", Landstar Ranger Inc , (332) 238-2183 , Available 
+ 05/23 5:05pm , 5/23 , V , 132 ," Pittsburgh, PA", — ," Los Angeles, CA"," 2,440 ", P , $500 , 5 ," 2,500 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:05pm , 5/23 , V , 224 ," Kimball, MI", — ," Whittier, CA"," 2,329 ", P , $550 , 5 ," 2,500 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:05pm , 5/23 , V , 228 ," E Lansing, MI", — ," Tustin, CA"," 1,898 ", P ," $1,100 ", 10 ," 5,000 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:05pm , 5/23 , V , 142 ," Columbus, OH", — ," Largo, FL"," 1,049 ", P , $800 , 10 ," 5,000 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:05pm , 5/23 , V , 102 ," Erie, PA", — ," Bradenton, FL"," 1,209 ", P , $500 , 5 ," 2,500 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:05pm , 5/23 , V , 194 ," Sidney, OH", — ," Canyon Country, CA"," 2,219 ", P ," $1,000 ", 10 ," 5,000 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:05pm , 5/23 , V , 190 ," Troy, MI", — ," Hayward, CA"," 2,406 ", P ," $2,650 ", 25 ," 12,500 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:05pm , 5/22 , V , 190 ," Troy, MI", — ," Hayward, CA"," 2,406 ", P , $800 , 5 ," 2,500 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 5:05pm , 5/23 , V , 217 ," Coldwater, OH", — ," Jacksonville, FL", 900 , F , — , — ," 44,000 ", Traffic Tech , (770) 772-0614 , Available 
+ 05/23 5:04pm , 5/23 , VR , 150 ," Ford City, PA", — ," Opa Locka, FL"," 1,198 ", F , — , 48 ," 4,720 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:04pm , 5/23 , VR , 169 ," Detroit, MI", — ," Elyria, OH", 147 , F , — , 48 ," 40,000 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:04pm , 5/23 , VR , 150 ," Ford City, PA", — ," Opa Locka, FL"," 1,198 ", P , — , 17 ," 4,720 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:03pm , 5/23 , V , 194 ," Buffalo, NY", — ," Pittsburgh, PA", 219 , F , — , — ," 44,122 ", Globaltranz/Afn , (224) 515-7267 , Available 
+ 05/23 5:03pm , 5/23 , VF , 151 ," Archbold, OH", — ," Lima, OH", 63 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 5:03pm , 5/23 , VR , 169 ," Detroit, MI", — ," Elyria, OH", 147 , F , — , 48 ," 40,000 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 5:02pm , 5/23 , V , 0 ," Cleveland, OH", — ," Garden Grove, CA"," 2,342 ", F , — , 48 ," 30,000 ", 1800packrat , (866) 322-1884 , Available 
+ 05/23 5:00pm , 5/23 , VR , 240 ," Goshen, IN", — ," El Paso, TX"," 1,558 ", F ," $2,700 ", 48 ," 5,020 ", Total Quality Logistics Inc , (800) 580-3101 x49368 , Available 
+ 05/23 5:00pm , 5/23 , V , 176 ," Southfield, MI", — ," Drums, PA", 502 , P , — , 43 ," 4,000 ", TRUST AND SPEED LOGISTICS LLC , (356) 310-1791 , Unavailable 
+ 05/23 4:59pm , 5/23 , VR , 157 ," Grove City, OH", — ," Panama City, FL", 837 , P , — , 27 ," 6,000 ", Total Quality Logistics Inc , (800) 580-3101 x37778 , Available 
+ 05/23 4:59pm , 5/23 , VR , 240 ," Gallipolis, OH", — ," Houston, TX"," 1,155 ", P , — , 12 ," 18,300 ", Total Quality Logistics Inc , (800) 580-3101 x37778 , Available 
+ 05/23 4:55pm , 5/23 , V , 142 ," Columbus, OH", — ," Bradenton, FL"," 1,065 ", P , — , 16 ," 6,000 ", Landstar Ranger Inc , (332) 238-2183 , Available 
+ 05/23 4:55pm , 5/23 , V , 102 ," Erie, PA", — ," Santa Clara, CA"," 2,585 ", P ," $1,100 ", 5 ," 2,500 ", Globaltranz/Lps , (480) 291-6518 , Available 
+ 05/23 4:51pm , 5/23 , VF , 151 ," Archbold, OH", — ," Athens, OH", 241 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 4:51pm , 5/23 , VF , 151 ," Archbold, OH", — ," Columbus, OH", 165 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 4:50pm , 5/23 , V , 40 ," Akron, OH", — ," Bellefontaine, OH", 153 , F , — , — ," 44,004 ", Crst The Transportation Solution Inc , (800) 567-1615 , Available 
+ 05/23 4:50pm , 5/23 , V , 176 ," Southfield, MI", — ," Drums, PA", 502 , P , — , 8 ," 5,000 ", All American Freight Brokers Inc , (847) 892-7068 , Available 
+ 05/23 4:49pm , 5/23 , VF , 151 ," Archbold, OH", — ," Lancaster, OH", 195 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 4:48pm , 5/23 , VF , 151 ," Archbold, OH", — ," Chillicothe, OH", 204 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 4:46pm , 5/23 , V , 119 ," Coshocton, OH", — ," Jacksonville, FL", 809 , P , — , 27 ," 12,336 ", Globaltranz Enterprises Llc , jean.j@shipprimetime.com , Available 
+ 05/23 4:45pm , 5/23 , VF , 121 ," Emlenton, PA", — ," Bartonsville, PA", 260 , F , $650 , — ," 45,000 ", Sureway Transportation Company , (803) 320-3151 , Available 
+ 05/23 4:45pm , 5/23 , VF , 121 ," Emlenton, PA", — ," Washington, PA", 106 , F , $350 , — ," 45,000 ", Sureway Transportation Company , (803) 320-3151 , Available 
+ 05/23 4:45pm , 5/23 , VF , 121 ," Emlenton, PA", — ," Selinsgrove, PA", 187 , F , $400 , — ," 45,000 ", Sureway Transportation Company , (803) 320-3151 , Available 
+ 05/23 4:45pm , 5/23 , VF , 151 ," Archbold, OH", — ," Chillicothe, OH", 204 , F , $500 , — ," 45,000 ", Sureway Transportation Company , (803) 320-3151 , Available 
+ 05/23 4:45pm , 5/23 , VF , 151 ," Archbold, OH", — ," Fairborn, OH", 140 , F , $500 , — ," 45,000 ", Sureway Transportation Company , (803) 320-3151 , Available 
+ 05/23 4:45pm , 5/23 , VF , 151 ," Archbold, OH", — ," Fairborn, OH", 140 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 4:44pm , 5/23 , V , 164 ," Holiday City, OH", — ," Champaign, IL", 289 , F , — , 48 ," 43,500 ", Total Quality Logistics Inc , (800) 580-3101 , Available 
+ 05/23 4:35pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Hermitage, PA", 155 , F , $556 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 4:35pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Beaver Falls, PA", 117 , F , $452 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 4:33pm , 5/23 , V , 212 ," Fairmont, WV", — ," Tyler, TX"," 1,146 ", F , — , — ," 40,000 ", Beemac Logistics , (724) 359-4205 , Available 
+ 05/23 4:25pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," New Castle, PA", 140 , F , $508 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 4:25pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Altoona, PA", 122 , F , $432 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 4:25pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Gibsonia, PA", 100 , F , $378 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 4:24pm , 5/23 , V , 176 ," Southfield, MI", — ," Drums, PA", 502 , P , — , 8 ," 5,000 ", A1 Value Logistics Inc , (678) 487-5508 , Available 
+ 05/23 4:21pm , 5/23 , V , 212 ," Fairmont, WV", — ," Wheeling, IL", 590 , F , — , — ," 42,000 ", Beemac Logistics , (724) 359-4205 , Available 
+ 05/23 4:20pm , 5/23 , V , 193 ," Waterloo, IN", — ," Lancaster, OH", 213 , F , $700 , 48 ," 44,500 ", Armstrong Transport Group Inc , (407) 743-6160 , Available 
+ 05/23 4:20pm , 5/23 , V , 193 ," Waterloo, IN", — ," Washington Ch, OH", 203 , F , $700 , 48 ," 44,500 ", Armstrong Transport Group Inc , (407) 743-6160 , Available 
+ 05/23 4:18pm , 5/23 , VF , 156 ," Romulus, MI", — ," Odessa, TX"," 1,487 ", P , $700 , 10 , 400 , Lynn Trucking Inc , (734) 946-4033 , Unavailable 
+ 05/23 4:11pm , 5/23 , V , 235 ," Perry, NY", — ," Geneva, IL", 619 , P ," $1,000 ", 16 ," 20,000 ", Concept International Transp Inc , rfaulkner@conceptintl.com , Available 
+ 05/23 4:11pm , 5/23 , VR , 85 ," New Phili, OH", — ," Lanham, MD", 340 , F , — , 48 ," 43,500 ", Midwest Angels Logistics , (573) 486-1116 x1 , Available 
+ 05/23 4:10pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Greensburg, PA", 66 , F , $258 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 4:10pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Munhall, PA", 76 , F , $302 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 4:10pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Butler, PA", 115 , F , $409 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 4:10pm , 5/23 , V , 220 ," Bruceton Mills, WV", — ," Carnegie, PA", 87 , F , $337 , — ," 42,000 ", Pls Logistics Services , (215) 309-7699 , Available 
+ 05/23 4:07pm , 5/23 , VF , 228 ," Middlebury, IN", — ," Cary, IL", 171 , F , $600 , 48 ," 28,000 ", Arrowhead Transportation Services Inc , (815) 676-3300 , Available 
+ 05/23 3:52pm , 5/23 , VA , 208 ," Ft Wayne, IN", — ," Dallas, TX"," 1,029 ", P , $500 , 4 ," 1,900 ", Lws Transportation Llc , (817) 439-2307 , Available 
+ 05/23 3:51pm , 5/23 , V , 34 ," Middlefield, OH", — ," W Chicago, IL", 415 , P , $700 , 28 ," 29,000 ", Spi Logistics , (951) 609-3222 , Available 
+ 05/23 3:50pm , 5/23 , VF , 121 ," Emlenton, PA", — ," Wooster, OH", 132 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 3:50pm , 5/23 , VF , 121 ," Emlenton, PA", — ," Rocky River, OH", 128 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 3:50pm , 5/23 , VF , 121 ," Emlenton, PA", — ," Mentor, OH", 116 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 3:50pm , 5/23 , VF , 121 ," Emlenton, PA", — ," Wooster, OH", 132 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 3:50pm , 5/23 , VF , 121 ," Emlenton, PA", — ," Rocky River, OH", 128 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 3:50pm , 5/23 , VF , 121 ," Emlenton, PA", — ," Wooster, OH", 132 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 3:50pm , 5/23 , VF , 121 ," Emlenton, PA", — ," Mentor, OH", 116 , F , — , 48 ," 44,000 ", R & D Transportation Inc , (727) 368-2063 , Unavailable 
+ 05/23 3:44pm , 5/23 , V , 194 ," Sidney, OH", — ," Danville, IL", 238 , F , — , 48 ," 44,516 ", JL Spencer Trucking/Northfork Transportation , (765) 509-1277 , Unavailable 
+ 05/23 3:42pm , 5/23 , VC , 135 ," Titusville, PA", — ," Sacramento, CA"," 2,498 ", F ," $6,000 ", 48 ," 13,000 ", King Of Freight LLC , (316) 530-8212 , Available 
+ 05/23 3:21pm , 5/23 , V , 169 ," Ruffs Dale, PA", — ," Groveport, OH", 196 , F , — , — ," 30,000 ", Axle Logistics Llc , (800) 693-1779 x2004 , Available 
+ 05/23 3:12pm , 5/23 , V , 82 ," Dover, OH", — ," Hialeah, FL"," 1,204 ", P ," $1,900 ", 24 ," 10,000 ", GLT , (786) 401-5277 , Available 
+ 05/23 2:46pm , 5/23 , V , 87 ," Meadville, PA", — ," Wilmer, TX"," 1,286 ", F , — , — ," 41,989 ", Amx Logistics , (334) 699-2760 x2 , Available 
+ 05/23 2:46pm , 5/23 , V , 87 ," Meadville, PA", — ," Wilmer, TX"," 1,286 ", F , — , — ," 41,643 ", Amx Logistics , (334) 699-2760 x2 , Available 
+ 05/23 1:27pm , 5/23 , VT , 244 ," W Chester, OH", — ," N Baltimore, OH", 150 , F , — , 45 ," 42,000 ", Willmar International LLC , (419) 257-1800 , Unavailable 
+ 05/23 1:02pm , 5/23 , V , 194 ," Buffalo, NY", — ," Hagerstown, MD", 315 , F , — , — ," 41,625 ", Amx Logistics , (334) 699-2760 x2 , Available 
