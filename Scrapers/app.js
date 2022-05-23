@@ -55,7 +55,7 @@ app.post('/truckersedge', (req, res) => {
             defaultViewport: null
         });
         const page = await browser.newPage();
-        page.setDefaultNavigationTimeout(10000);
+        // page.setDefaultNavigationTimeout(10000);
         await page.goto('https://www.dat.com/login', { waitUntil: "networkidle2" });
         await page.waitForSelector('body > main > div > div > section.elementor-nested-section.elementor-section.elementor-top-section.elementor-element.elementor-element-b40c250.mt-0.elementor-section-boxed.section-vm-md.section-vp-default.elementor-section-height-default.elementor-section-height-default > div > div > div > section.elementor-section.elementor-inner-section.elementor-element.elementor-element-7514f17.mb-0.elementor-section-boxed.section-vm-md.section-vp-default.elementor-section-height-default.elementor-section-height-default > div > div.elementor-column.elementor-col-33.elementor-inner-column.elementor-element.elementor-element-0c795ec > div > div.elementor-element.elementor-element-0cfbfbc.cl1.elementor-widget.elementor-widget-text-editor > div > ul > li:nth-child(1) > a');
         await page.click('body > main > div > div > section.elementor-nested-section.elementor-section.elementor-top-section.elementor-element.elementor-element-b40c250.mt-0.elementor-section-boxed.section-vm-md.section-vp-default.elementor-section-height-default.elementor-section-height-default > div > div > div > section.elementor-section.elementor-inner-section.elementor-element.elementor-element-7514f17.mb-0.elementor-section-boxed.section-vm-md.section-vp-default.elementor-section-height-default.elementor-section-height-default > div > div.elementor-column.elementor-col-33.elementor-inner-column.elementor-element.elementor-element-0c795ec > div > div.elementor-element.elementor-element-0cfbfbc.cl1.elementor-widget.elementor-widget-text-editor > div > ul > li:nth-child(1) > a')
@@ -82,12 +82,14 @@ app.post('/truckersedge', (req, res) => {
             }, origin_dh)
 
             await page.waitForSelector('#searchform-city-destination')
-            await page.type("#searchform-city-destination", (destination == null) ? "" : destination , { delay: 100 }).then(async () => {
+            await page.type("#searchform-city-destination", (destination == null) ? "" : destination.toUpperCase(), { delay: 100 }).then(async () => {
                 // #mat-option-31 > span
-                await sleep(1000)
-                await page.waitForSelector('#mat-option-33 > span')
-                await page.click('#mat-option-33 > span')
-                console.log("span clicked");
+                if (destination != null) {
+                    await sleep(1500)
+                    await page.waitForSelector('#mat-option-33 > span')
+                    await page.click('#mat-option-33 > span')
+                }
+                // console.log("span clicked");
             })
             if (destination_dh != null) {
                 await page.waitForSelector("#searchform-dhd")
@@ -191,7 +193,7 @@ app.post('/truckersedge', (req, res) => {
                 console.log("There no truckes in this search\n")
                 res.sendStatus(500)
             }
-            finally{
+            finally {
                 await browser.close();
             }
         })
